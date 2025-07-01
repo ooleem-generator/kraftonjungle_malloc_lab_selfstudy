@@ -66,7 +66,7 @@ void *mem_sbrk(int incr)
     }
     mem_brk += incr;
     return (void *)old_brk;
-}
+} 
 
 /*
  * mem_heap_lo - return address of the first heap byte

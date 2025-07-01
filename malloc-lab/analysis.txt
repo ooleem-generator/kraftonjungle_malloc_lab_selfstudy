@@ -1,0 +1,4 @@
+Team Name:ateam
+Member 1 :Harry Bovik:bovik@cs.cmu.edu
+Using default tracefiles in ./traces/
+Perf index = 44 (util) + 10 (thru) = 54/100
