@@ -46,7 +46,7 @@ team_t team = {
 
 #define SIZE_T_SIZE (ALIGN(sizeof(size_t)))
 
-#define CHUNKSIZE (1<<12) // 4KB
+#define CHUNKSIZE (1<<8) // 4KB
 
 #define MAX(x,y) ((x) > (y) ? (x) : (y))
 
@@ -269,8 +269,8 @@ void *mm_realloc(void *ptr, size_t size)
 void *extend_heap(size_t words) {
 
     char *bp;
-    char *prev_freebp = bp;
-    char *next_freebp = bp;
+    // char *prev_freebp = bp;
+    // char *next_freebp = bp;
     size_t size;
 
     /* Allocate an even number of words to maintain alignment */
